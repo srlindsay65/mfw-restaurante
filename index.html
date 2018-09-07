@@ -73,11 +73,28 @@
 
 		</div>  <!-- home end-->
 		<div id="story" class="row">  <!-- story start-->
+			<div class="col-md-10 container-border">
 
-
+				<div class="col-md-6 story-left">
+					<h2 class="story-header">Our Story</h2>
+					<p class="font-bold story-tag">One Man. One Dream.</p>
+				</div>
+				<div class="col-md-6 story-right">
+					<h2 class="year">1989</h2>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque modi, distinctio at saepe possimus culpa molestias neque obcaecati veritatis odit, a blanditiis illum, debitis repudiandae alias vitae hic! Sed, iure.</p>
+						<p>Aliquid tenetur qui sint cumque, possimus quidem optio magnam error atque, vero perspiciatis eligendi accusamus explicabo reiciendis sequi at expedita voluptatem sunt, veniam nemo debitis maiores nam. Dignissimos, alias, dolore.</p>
+						<p>Placeat dolorem sapiente ullam id itaque quod aliquam cupiditate minus distinctio eligendi dolores ipsum obcaecati reiciendis, delectus repudiandae numquam ea maxime ex inventore totam consequuntur accusantium eum dolore natus. Sequi.</p>
+						<p>Magni provident sequi perspiciatis quidem voluptatem natus, asperiores explicabo numquam facere cupiditate laborum est ex id, harum tempora pariatur. Iusto odit impedit, nihil nisi qui eius fuga nulla voluptatum ab.</p>
+					</div>
+				</div>
+			</div>
 		</div>  <!-- story end-->
 		<div id="review" class="row">  <!-- review start-->
-
+			<div class="review-info">
+				<h2 class="review-header">Fresno Bee</h2>
+				<p class="review-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsum, consectetur repudiandae ullam consequuntur animi.</p>
+			</div>
 
 		</div>  <!-- review end-->
 		<div id="menu" class="row">  <!-- menu start-->
@@ -97,7 +114,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		$('body').scrollspy({ target: '#navbar-scroll' })
+		$(document).ready(function() {
+			$('body').scrollspy({target: "#navbar-scroll", offset: 50});
+			$(".navbar a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					const hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
 	</script>
 </body>
 </html>
