@@ -28,8 +28,15 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 99999;
+  padding: 0 40px;
   width: 100%;
+}
+
+span.fa.fa-bars {
+  color: var(--white);
+  font-size: 25px;
+  text-shadow: 1px 1px 3px var(--dark-shadow);
 }
 
 .logo {
@@ -133,9 +140,27 @@ header {
 }
 
 #menu {
-  background: purple;
+  background: url('../img/black_linen.png');
+  background-size: cover;
+  flex-direction: column;
+}
+
+.menu-header {
+  font-family: var(--lobster);
+  font-size: 70px;
+  color: var(--white);
+  width: 100%;
+}
+
+.tab-pane {
+  /* height: 500px; */
+  background: #fff;
 }
 
 #contact {
   background: red;
+}
+
+@media screen and (max-width: 767px) {
+
 }

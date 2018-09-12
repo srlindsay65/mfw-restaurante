@@ -17,13 +17,21 @@
 					<img src="./img/name-01.png" alt="Restaurante Logo">
 				</div>
 				<nav id="navbar-scroll" class="navbar pull-right">
-					<ul class="nav nav-pills" role="tablist">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#story">Our Story</a></li>
-						<li><a href="#review">Review</a></li>
-						<li><a href="#menu">Menu</a></li>
-						<li><a href="#contact">Contact Us</a></li>
-					</ul>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+					</button>
+
+					<div class="pull-right collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav nav-pills" role="tablist">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#story">Our Story</a></li>
+							<li><a href="#review">Review</a></li>
+							<li><a href="#menu">Menu</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+						</ul>
+					</div>
+
 				</nav>
 			</header>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -98,6 +106,112 @@
 
 		</div>  <!-- review end-->
 		<div id="menu" class="row">  <!-- menu start-->
+			<div class="col-md-12">
+				<h2 class="menu-header text-center">Menu</h2>
+			</div>
+
+					<div class="col-sm-10">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+  						<li role="presentation" class="active"><a href="#appetizer" aria-controls="appetizer" role="tab" data-toggle="tab">Appetizer</a></li>
+  						<li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab">Lunch`</a></li>
+  						<li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab">Dinner</a></li>
+  						<li role="presentation"><a href="#dessert" aria-controls="dessert" role="tab" data-toggle="tab">Dessert</a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+  						<div role="tabpanel" class="tab-pane active" id="appetizer">
+  							<div class="col-sm-3 well">
+  								<img class="img-responsive" src="./img/bruschetta.jpg" alt="Bruschetta">
+  								<h3>Appetizer 1</h3>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+  							</div>
+  							<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dip.jpg" alt="Bruschetta">
+  								<h3>Appetizer 2</h3>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+  							</div>
+  							<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/meat.jpg" alt="Bruschetta">
+  								<h3>Appetizer 3</h3>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+  							</div>
+  							<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/eggplant.jpg" alt="Bruschetta">
+  								<h3>Appetizer 4</h3>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+  							</div>
+  						</div>
+						  <div role="tabpanel" class="tab-pane" id="lunch">
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/lunch1.jpg" alt="Bruschetta">
+									<h3>Lunch 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/lunch2.jpg" alt="Bruschetta">
+									<h3>Lunch 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/lunch3.jpg" alt="Bruschetta">
+									<h3>Lunch 3</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/lunch4.jpg" alt="Bruschetta">
+									<h3>Lunch 4</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+						  </div>
+						  <div role="tabpanel" class="tab-pane" id="dinner">
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dinner1.jpg" alt="Bruschetta">
+									<h3>Dinner 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dinner2.jpg" alt="Bruschetta">
+									<h3>Dinner 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dinner3.jpg" alt="Bruschetta">
+									<h3>Dinner 3</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dinner4.jpg" alt="Bruschetta">
+									<h3>Dinner 4</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+						  </div>
+						  <div role="tabpanel" class="tab-pane" id="dessert">
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dessert1.jpg" alt="Bruschetta">
+									<h3>Appetizer 1</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dessert2.jpg" alt="Bruschetta">
+									<h3>Appetizer 2</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dessert3.jpg" alt="Bruschetta">
+									<h3>Appetizer 3</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+								<div class="col-sm-3 well">
+									<img class="img-responsive" src="./img/dessert4.jpg" alt="Bruschetta">
+									<h3>Appetizer 4</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, minus!</p>
+								</div>
+						  </div>
+						</div>
+
+					</div>
 
 
 		</div>  <!-- menu end-->
@@ -114,20 +228,70 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
+		// $(document).ready(function() {
+		// 	$('a[href="#appetizer"]').click(function (e) {
+  	// 		e.preventDefault()
+		// 	  $(this).tab('show')
+		// 	})
+		// 	$('#lunch').click(function (e) {
+		// 		e.preventDefault()
+		// 		$(this).tab('show')
+		// 	})
+		// 	$('#dinner').click(function (e) {
+		// 		e.preventDefault()
+		// 		$(this).tab('show')
+		// 	})
+		// 	$('#dessert').click(function (e) {
+		// 		e.preventDefault()
+		// 		$(this).tab('show')
+		// 	})
+		// 	$('body').scrollspy({target: "#navbar-scroll", offset: 50});
+		// 	$(".navbar a").on('click', function(event) {
+		// 		if (this.hash !== "") {
+		// 			event.preventDefault();
+		// 			const hash = this.hash;
+		// 			$('html, body').animate({
+		// 				scrollTop: $(hash).offset().top
+		// 			}, 800, function(){
+		// 				window.location.hash = hash;
+		// 			});
+		// 		}
+		// 	});
+		// });
 		$(document).ready(function() {
-			$('body').scrollspy({target: "#navbar-scroll", offset: 50});
-			$(".navbar a").on('click', function(event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					const hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 800, function(){
-						window.location.hash = hash;
-					});
-				}
-			});
+		$('a[href="#appetizer"]').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+
+		$('a[href="#lunch"]').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+
+		$('a[href="#dinner"]').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+
+		$('a[href="#desert"]').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+
+		$('body').scrollspy({target: "#navbar-scroll", offset: 50});
+		$(".navbar a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				const hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+					window.location.hash = hash;
+				});
+			}
 		});
+	});
 	</script>
 </body>
 </html>
