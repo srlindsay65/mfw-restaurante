@@ -157,8 +157,21 @@ span.fa.fa-bars {
   background: #fff;
 }
 
+.col-sm-3 > h3 {
+  color: var(--orange);
+}
+
 #contact {
-  background: red;
+  background: var(--orange);
+}
+
+.contact-header {
+  color: var(--white);
+  font-size: 70px;
+}
+
+.contact-text {
+  color: var(--white);
 }
 
 @media screen and (max-width: 767px) {
