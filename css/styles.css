@@ -7,6 +7,8 @@
   --lobster: 'Lobster', cursive, sans-serif;
   --white: #fafafa;
   --orange: #f7472a;
+  --black: #000;
+  --lightorange: #ff5b2d;
   --light-shadow: rgba(0, 0, 0, .2);
   --dark-shadow: rgba(0, 0, 0, .6);
 }
@@ -22,16 +24,21 @@
 body {
   background: #000;
   position: relative;
+  font-family: var(--raleway);
 }
 
-header {
+.navbar-brand {
+  padding: 10px 15px;
+}
+
+/* header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99999;
   padding: 0 40px;
   width: 100%;
-}
+} */
 
 span.fa.fa-bars {
   color: var(--white);
@@ -39,9 +46,9 @@ span.fa.fa-bars {
   text-shadow: 1px 1px 3px var(--dark-shadow);
 }
 
-.logo {
+/* .logo {
   display: inline-block;
-}
+} */
 
 .cutlery-logo {
   width: 500px;
@@ -68,6 +75,7 @@ span.fa.fa-bars {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px 0;
 }
 
 #story {
@@ -152,9 +160,25 @@ span.fa.fa-bars {
   width: 100%;
 }
 
+.tab-container {
+  margin-top: 50px;
+}
+
+.tab-container a {
+  color: var(--white);
+}
+
+.tab-container a:hover {
+  color: var(--black);
+}
+
+.tab-content {
+  background: var(--white);
+  height: 450px;
+}
+
 .tab-pane {
-  /* height: 500px; */
-  background: #fff;
+  padding: 20px 0;
 }
 
 .col-sm-3 > h3 {
@@ -175,5 +199,19 @@ span.fa.fa-bars {
 }
 
 @media screen and (max-width: 767px) {
+  #menu {
+    height: 100%;
+  }
+  .navbar-brand {
+    margin-top: 5px;
+  }
+  .tab-content {
+    height: 100%;
+  }
+  .tab-pane img {
+    max-width: 200px;
+  }
+
+
 
 }
